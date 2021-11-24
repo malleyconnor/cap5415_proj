@@ -34,13 +34,13 @@ for i in tqdm(range(len(im_paths))):
         res_counts[im_shape] = 0
 
     res_counts[im_shape] += 1
-    if im_shape == res_to_get:
-        try:
-            os.mkdir('/mnt/a/data/256_object/640_480')
-        except (OSError):
-            ...
-
-        shutil.move(im, '/mnt/a/data/256_object/640_480/' + im.split('/')[-1])
+#    if im_shape == res_to_get:
+#        try:
+#            os.mkdir('/mnt/a/data/256_object/640_480')
+#        except (OSError):
+#            ...
+#
+#        shutil.move(im, '/mnt/a/data/256_object/640_480/' + im.split('/')[-1])
     
 
 
